@@ -5,7 +5,7 @@ This is forked from [https://github.com/joestandring/dwm-bar](https://github.com
 
 ## The modules on show are:
 1. Arch update
-2. Current weather (change the location in the file)
+2. Current weather (change the location in the file, please add your openweatherMap API code in the file to use it)
 3. CPU temp
 4. Volume control (show current level and mute)
 5. Network name
