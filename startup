@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# ./.config/polybar/launch.sh
+# xcompmgr &		# xcompmgr for transparency
+# dunst &			# dunst for notifications
+# xset r rate 300 50 &	# Speed xrate up
+# unclutter &		# Remove mouse when idle
+# ibus-daemon -d &
+# xfce4-power-manager
+# feh --bg-fill Pictures/line_light_spot_85535_2560x1600.jpg
+# sxhkd &
+# dwmblocks &
+# uget-gtk &
+# clipit
+# ibus-daemon -x &
+# xautolock -time 60 -locker blurlock
+# python ~/.local/bin/alternating_layout.py
+# dropbox start &
+# xrandr --output DP-1 --mode 2560x1440
+# setxkbmap -layout us
+# setxkbmap -option 'grp:alt_shift_toggle'
+
+# ./.config/polybar/launch.sh
+xcompmgr 		# xcompmgr for transparency
+# dunst &			# dunst for notifications
+xset r rate 300 50 	# Speed xrate up
+# unclutter 		# Remove mouse when idle
+conky
+xfce4-power-manager
+feh --bg-fill Pictures/8155b41ae43140299c342079a2c134dd.jpg
+sxhkd
+# dwmblocks &
+# uget-gtk &
+clipit
+dropbox start
+# xautolock -time 60 -locker blurlock &
+ibus-daemon -d
+ibus-daemon -x
+# python ~/.local/bin/alternating_layout.py
+# xrandr --output DP-1 --mode 2560x1440
+# setxkbmap -layout us
+# setxkbmap -option 'grp:alt_shift_toggle'

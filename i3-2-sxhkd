@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+
+# name: i32sxhkd
+# converts i3-config syntas to sxhkd
+# argument 1  - full path to config file
+# expected input/output - i32sxhkd [FILE] -> converted output
+# example suggested usage: i32sxhkd filename  > outputfile
+
+file=~/.config/i3/config
+
+perl -pe 's/(?<=[^\s])\+(?=[^\s])/ \+ /g;
+     s/bindsym //g;
+     s/--no-startup-id //g;
+     s/bindsym //g;
+     s/\$mod/super/g;
+     s/Shift/shift/g;
+     s/Control/ctrl/g;
+     s/Ctrl/ctrl/g;
+     s/Alt/alt/g;
+     s/Mod1/alt/g;
+     s/ exec /\n\t/g' \
+    "$file"
+echo ""

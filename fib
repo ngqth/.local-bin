@@ -1,0 +1,5 @@
+#!/bin/sh
+
+i3-msg focus left
+# sleep .05
+i3-msg resize grow width 12 px or 12 ppt

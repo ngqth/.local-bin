@@ -1,0 +1,27 @@
+#!/bin/sh
+
+id=$1
+
+apps() {
+    rofi -show drun -theme ~/.config/rofi/rofi.rasi -display-run '$ ' -display-drun 'App ' -display-window 'Windows ' -width 30 -kb-row-select "Tab" -kb-row-tab "Control+space" -mesg ">>> Tab = Autocomplete" -show-icons
+}
+
+win() {
+    rofi -show window -theme ./.config/rofi/rofi.rasi -display-run '$ ' -display-drun 'App ' -display-window 'Windows ' -window-format {t} -mesg ">>> Tab = Autocomplete"
+}
+
+log() {
+    ~/.config/rofi/menu/logout
+}
+
+case $id in
+    apps)
+        apps
+        ;;
+    win)
+        win
+        ;;
+    log)
+        log
+        ;;
+esac

@@ -55,10 +55,6 @@ if [ -n "$weather" ]; then
     weather_icon=$(echo "$weather" | jq -r ".weather[0].icon")
 
     temp=$(echo "MEL": "$(get_icon "$weather_icon")" "$weather_desc", "$weather_temp$SYMBOL")
+    echo $temp > ~/.cache/weather
+    sleep 3600s
 fi
-
-temp () {
-    printf "%s" "$SEP1"
-    printf "%s" "$temp"
-    printf "%s" "$SEP2"
-}

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+i3-msg focus left
+i3-msg focus left
+i3-msg resize shrink width 16 px or 16 ppt
+i3-msg focus right
+i3-msg focus right
+i3-msg resize shrink width 16 px or 16 ppt
+i3-msg split v

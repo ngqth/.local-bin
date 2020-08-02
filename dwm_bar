@@ -44,10 +44,10 @@ export SEP2="]"
 # . "$DIR/bar-functions/dwm_connman.sh"
 # . "$DIR/bar-functions/dwm_loadavg.sh"
 . "$DIR/bar-functions/cpu.sh"
-. "$DIR/bar-functions/openweathermap-detailed.sh"
 . "$DIR/bar-functions/isrunning-dropbox.sh"
 . "$DIR/bar-functions/dwm_download.sh"
 . "$DIR/bar-functions/dwm_up.sh"
+. "$DIR/bar-functions/weather.sh"
 
 # Update dwm status bar every second
 while true
