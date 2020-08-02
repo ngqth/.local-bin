@@ -1,4 +1,5 @@
 #!/bin/bash
 
 cupd=$(checkupdates | wc -l)
+
 printf "$cupd ups"
