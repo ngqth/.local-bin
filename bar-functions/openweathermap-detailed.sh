@@ -23,7 +23,7 @@ get_icon() {
     echo $icon
 }
 
-KEY="cc2b0cf0e33c687cea25b29d290f1aa9"
+KEY="YOUR API CODE HERE"
 CITY="Attwood, AU"
 UNITS="metric"
 SYMBOL="°"
