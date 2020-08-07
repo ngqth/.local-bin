@@ -10,6 +10,7 @@
 # It is recommended that you place functions in the subdirectory ./bar-functions and use: . "$DIR/bar-functions/dwm_example.sh"
 
 # Store the directory the script is running from
+# openweathermap > /dev/null 2>&1 &
 LOC=$(readlink -f "$0")
 DIR=$(dirname "$LOC")
 
@@ -46,12 +47,14 @@ export SEP2="]"
 . "$DIR/bar-functions/cpu.sh"
 . "$DIR/bar-functions/isrunning-dropbox.sh"
 . "$DIR/bar-functions/dwm_download.sh"
-. "$DIR/bar-functions/dwm_up.sh"
+# . "$DIR/bar-functions/dwm_up.sh"
 . "$DIR/bar-functions/weather.sh"
+# . "$DIR/bar-functions/bandwidth"
 
 # Update dwm status bar every second
+
 while true
 do
-    xsetroot -name "$(arch)$(temp)$(cpu)$(dwm_spotify)$(dwm_pulse)$(dwm_networkmanager)$(download)$(up)$(dwm_keyboard)$(dwm_date)$(dropbox)"
+    xsetroot -name "$(arch)$(temp)$(cpu)$(dwm_spotify)$(dwm_pulse)$(dwm_networkmanager)$(download)$(dwm_keyboard)$(dwm_date)$(dropbox)"
     sleep 1
 done
