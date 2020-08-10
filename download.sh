@@ -7,8 +7,8 @@ download () {
     up2=$(ifstat -p -j | grep "tx_bytes" | sed '4,4!d' | awk '{print substr($2, 1, length($2) - 1)}')
     up=$(( $up2 - $up1 ))
     down=$(( $down2 - $down1 ))
-    printf ": %6sB/s " "$(numfmt --to=iec "$down")"
-    printf ": %6sB/s" "$(numfmt --to=iec "$up")"
+    printf ": %-4sB/s\\n " "$(numfmt --to=iec "$down")"
+    printf ": %-4sB/s\\n" "$(numfmt --to=iec "$up")"
 }
 
 while true

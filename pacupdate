@@ -1,4 +1,5 @@
 #!/bin/bash
-
-cupd=$(checkupdates | wc -l)
-printf "$SEP1$cupd ups$SEP2"
+pacupdate () {
+    cupd=$(cat ~/.cache/pacman_updates)
+    printf "$SEP1$cupd ups$SEP2"
+}

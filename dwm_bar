@@ -41,7 +41,7 @@ export SEP2="]"
 . "$DIR/bar-functions/dwm_keyboard.sh"
 # . "$DIR/bar-functions/dwm_ccurse.sh"
 . "$DIR/bar-functions/dwm_date.sh"
-. "$DIR/bar-functions/arch.sh"
+. "$DIR/bar-functions/pacupdate.sh"
 # . "$DIR/bar-functions/dwm_connman.sh"
 # . "$DIR/bar-functions/dwm_loadavg.sh"
 . "$DIR/bar-functions/cpu.sh"
@@ -55,6 +55,6 @@ export SEP2="]"
 
 while true
 do
-    xsetroot -name "$(arch)$(temp)$(cpu)$(dwm_spotify)$(dwm_pulse)$(dwm_networkmanager)$(download)$(dwm_keyboard)$(dwm_date)$(dropbox)"
-    sleep 1
+    xsetroot -name "$(download)$(dwm_networkmanager)$(cpu)$(temp)$(dwm_spotify)$(dwm_pulse)$(dwm_keyboard)$(dropbox)$(pacupdate)  $(dwm_date)"
+    sleep 1s
 done
